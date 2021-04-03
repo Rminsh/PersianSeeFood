@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6A3970426183843001C905C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A3970326183843001C905C /* ImagePicker.swift */; };
 		C6A952752617B2D200B89230 /* PersianSeeFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A952742617B2D200B89230 /* PersianSeeFoodApp.swift */; };
-		C6A952772617B2D200B89230 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A952762617B2D200B89230 /* ContentView.swift */; };
+		C6A952772617B2D200B89230 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A952762617B2D200B89230 /* MainView.swift */; };
 		C6A952792617B2D400B89230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A952782617B2D400B89230 /* Assets.xcassets */; };
 		C6A9527C2617B2D400B89230 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A9527B2617B2D400B89230 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6A3970326183843001C905C /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C6A952712617B2D200B89230 /* PersianSeeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersianSeeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A952742617B2D200B89230 /* PersianSeeFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersianSeeFoodApp.swift; sourceTree = "<group>"; };
-		C6A952762617B2D200B89230 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6A952762617B2D200B89230 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C6A952782617B2D400B89230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6A9527B2617B2D400B89230 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6A9527D2617B2D400B89230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				C6A952742617B2D200B89230 /* PersianSeeFoodApp.swift */,
-				C6A952762617B2D200B89230 /* ContentView.swift */,
+				C6A952762617B2D200B89230 /* MainView.swift */,
+				C6A3970326183843001C905C /* ImagePicker.swift */,
 				C6A952782617B2D400B89230 /* Assets.xcassets */,
 				C6A9527D2617B2D400B89230 /* Info.plist */,
 				C6A9527A2617B2D400B89230 /* Preview Content */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A952772617B2D200B89230 /* ContentView.swift in Sources */,
+				C6A3970426183843001C905C /* ImagePicker.swift in Sources */,
+				C6A952772617B2D200B89230 /* MainView.swift in Sources */,
 				C6A952752617B2D200B89230 /* PersianSeeFoodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +281,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.aseman.test.app.PersianSeeFood;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shalchian.PersianSeeFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,7 +303,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.aseman.test.app.PersianSeeFood;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shalchian.PersianSeeFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

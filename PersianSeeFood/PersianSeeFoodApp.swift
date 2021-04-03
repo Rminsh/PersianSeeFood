@@ -11,7 +11,7 @@ import SwiftUI
 struct PersianSeeFoodApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
