@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C67BF0712618D822008DE1B9 /* ImagePredictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BF0702618D822008DE1B9 /* ImagePredictions.swift */; };
 		C6A3970426183843001C905C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A3970326183843001C905C /* ImagePicker.swift */; };
 		C6A39707261840F5001C905C /* PersianFood.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C6A39706261840F5001C905C /* PersianFood.mlmodel */; };
 		C6A952752617B2D200B89230 /* PersianSeeFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A952742617B2D200B89230 /* PersianSeeFoodApp.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C67BF0702618D822008DE1B9 /* ImagePredictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictions.swift; sourceTree = "<group>"; };
 		C6A3970326183843001C905C /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C6A39706261840F5001C905C /* PersianFood.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PersianFood.mlmodel; sourceTree = "<group>"; };
 		C6A952712617B2D200B89230 /* PersianSeeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersianSeeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,7 @@
 				C6A952782617B2D400B89230 /* Assets.xcassets */,
 				C6A9527D2617B2D400B89230 /* Info.plist */,
 				C6A9527A2617B2D400B89230 /* Preview Content */,
+				C67BF0702618D822008DE1B9 /* ImagePredictions.swift */,
 			);
 			path = PersianSeeFood;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				C6A3970426183843001C905C /* ImagePicker.swift in Sources */,
 				C6A39707261840F5001C905C /* PersianFood.mlmodel in Sources */,
 				C6A952772617B2D200B89230 /* MainView.swift in Sources */,
+				C67BF0712618D822008DE1B9 /* ImagePredictions.swift in Sources */,
 				C6A952752617B2D200B89230 /* PersianSeeFoodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
