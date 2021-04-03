@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreML
 
 struct MainView: View {
     
@@ -14,10 +15,22 @@ struct MainView: View {
     @State private var inputImage: UIImage?
     
     @State private var analyzeResult: String = "Tap on the camera to add image"
+    @State private var otherResult: String = ""
+    
+    let model: PersianFood = {
+        do {
+            let config = MLModelConfiguration()
+            return try PersianFood(configuration: config)
+        } catch {
+            print(error)
+            fatalError("Couldn't create PersoanFood model")
+        }
+    }()
     
     var body: some View {
         VStack {
             HStack {
+                Spacer()
                 Image("spoon")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -71,9 +84,24 @@ struct MainView: View {
                     .aspectRatio(contentMode: .fit)
                     .padding(.vertical)
                     .frame(maxHeight: 180)
+                Spacer()
             }
             .frame(maxHeight: 250)
+            
+            /// ML Image Classification result
             Text(analyzeResult)
+                .font(.title2)
+                .fontWeight(.semibold)
+                .foregroundColor(Color.accentColor)
+                .multilineTextAlignment(.center)
+                .padding()
+            
+            /// ML other results
+            Text(otherResult)
+                .font(.body)
+                .fontWeight(.semibold)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.leading)
                 .padding()
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
@@ -86,8 +114,24 @@ struct MainView: View {
     }
     
     func loadImage() {
-        guard let inputImage = inputImage else { return }
+        guard let inputImage = inputImage, let bufferImage = inputImage.toCVPixelBuffer() else { return }
         image = Image(uiImage: inputImage)
+        let output = try? self.model.prediction(image: bufferImage)
+        
+        if let output = output {
+            /// Food name result
+            analyzeResult = output.classLabel
+            
+            /// Food name other results
+            let predictions = output.classLabelProbs.sorted { $0.1 > $1.1}
+            let prediction = predictions.compactMap { (key, value) in
+                return value * 100 > 10 ? "\(key) = \(String(format: "%.2f",value * 100))%" : nil
+            }.joined(separator: "\n")
+            otherResult = prediction
+        } else {
+            analyzeResult = "Failed to recognize the photo"
+            otherResult = ""
+        }
     }
 }
 

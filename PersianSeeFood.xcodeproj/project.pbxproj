@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6A3970426183843001C905C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A3970326183843001C905C /* ImagePicker.swift */; };
+		C6A39707261840F5001C905C /* PersianFood.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C6A39706261840F5001C905C /* PersianFood.mlmodel */; };
 		C6A952752617B2D200B89230 /* PersianSeeFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A952742617B2D200B89230 /* PersianSeeFoodApp.swift */; };
 		C6A952772617B2D200B89230 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A952762617B2D200B89230 /* MainView.swift */; };
 		C6A952792617B2D400B89230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A952782617B2D400B89230 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		C6A3970326183843001C905C /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		C6A39706261840F5001C905C /* PersianFood.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PersianFood.mlmodel; sourceTree = "<group>"; };
 		C6A952712617B2D200B89230 /* PersianSeeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersianSeeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A952742617B2D200B89230 /* PersianSeeFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersianSeeFoodApp.swift; sourceTree = "<group>"; };
 		C6A952762617B2D200B89230 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				C6A952742617B2D200B89230 /* PersianSeeFoodApp.swift */,
 				C6A952762617B2D200B89230 /* MainView.swift */,
 				C6A3970326183843001C905C /* ImagePicker.swift */,
+				C6A39706261840F5001C905C /* PersianFood.mlmodel */,
 				C6A952782617B2D400B89230 /* Assets.xcassets */,
 				C6A9527D2617B2D400B89230 /* Info.plist */,
 				C6A9527A2617B2D400B89230 /* Preview Content */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6A3970426183843001C905C /* ImagePicker.swift in Sources */,
+				C6A39707261840F5001C905C /* PersianFood.mlmodel in Sources */,
 				C6A952772617B2D200B89230 /* MainView.swift in Sources */,
 				C6A952752617B2D200B89230 /* PersianSeeFoodApp.swift in Sources */,
 			);
