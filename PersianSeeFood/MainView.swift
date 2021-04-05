@@ -79,7 +79,7 @@ struct MainView: View {
                     Circle()
                         .foregroundColor(.white)
                         .shadow(color: Color.black.opacity(0.5), radius: 10, x: -5, y: -5)
-                        .padding(.all, 35)
+                        .padding(.all, 40)
                     
                     /// Food image
                     if image != nil {
@@ -87,7 +87,7 @@ struct MainView: View {
                             .resizable()
                             .scaledToFill()
                             .clipShape(Circle())
-                            .padding(.all, 50)
+                            .padding(.all, 57)
                     } else {
                         Image(systemName: "camera.fill")
                             .font(.system(size: 38))
@@ -101,7 +101,7 @@ struct MainView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 15))
                         .shadow(color: Color.white, radius: 2, x: -2, y: -2)
                         .clipShape(Circle())
-                        .padding(.all, 35)
+                        .padding(.all, 40)
                     
                     Circle()
                         .stroke(Color(red: 236/255, green: 234/255, blue: 235/255),lineWidth: 4)
@@ -109,7 +109,7 @@ struct MainView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 15))
                         .shadow(color: Color.white, radius: 2, x: -2, y: -2)
                         .clipShape(Circle())
-                        .padding(.all, 50)
+                        .padding(.all, 57)
                 }
             }
             Image("fork")
