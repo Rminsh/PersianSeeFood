@@ -12,11 +12,8 @@ The ML model trained with food images gathered around from the internet.
 ## Preview 📱
 
 <p align="center">
-<iframe width="560" height="315"
-src="https://www.youtube.com/watch?v=IzAK_qK2kwI" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+    [![Persian SeeFood concept preview](https://yt-embed.herokuapp.com/embed?v=IzAK_qK2kwI)](https://www.youtube.com/watch?v=IzAK_qK2kwI "Persian SeeFood concept preview")
+</p>
 
 
 ## How to build 🛠
